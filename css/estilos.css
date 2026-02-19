@@ -1,0 +1,98 @@
+@font-face{
+	font-family: FuenteLato;
+	src: url(../fuentes/Lato-BlackItalic.ttf);
+}
+footer{
+	padding: 10px;
+	text-align: center;
+}
+h1.titulo{
+	font-family: FuenteLato;
+	text-align: center;
+	color: blue;
+}
+h2.titulo{
+	font-family: FuenteLato;
+	text-align: center;
+	color: maroon;
+}
+h4{
+	font-family: FuenteLato;
+	text-align: center;
+	color: maroon;
+}
+h5{
+	font-family: FuenteLato;
+	text-align: right;
+	color: white;
+}
+.img-small{
+	width: 30px; height: 30px;
+}
+.card-deck{
+	padding-top: 20px;
+}
+.card{
+	padding-bottom: 10px;
+	padding-top: 10px;
+	align-items: center;
+	text-align: center;
+	background-color: mintcream;
+}
+.card-img-top{
+	width: 300px; height: 350px;
+}
+.card-footer{
+	padding: 0px;
+}
+.img-background {
+	background-image: url('../imagenes/portadas/fondo2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 20px;
+}
+.img-background-upload {
+	background-image: url('../imagenes/portadas/fondo3.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 20px;
+}
+.formulario{
+	font-family: FuenteLato;
+	text-align: left;
+	color: black;
+}
+.input-file{
+	display: flex;
+	justify-content: flex-end;
+}
+.input-file-input{
+	display: none;
+}
+.input-file-field, .input-file-btn{
+	display: inline-block;
+	height: 38px;
+	padding: 5px 10x;
+}
+.input-file-btn{
+	background-color: gray;
+	color: white;
+	line-height: 40px;
+	width: 200px;
+	text-align: center;
+	cursor: pointer;
+}
+.input-file-field{
+	border: 0px solid;
+	width: 400px;
+	margin-right: 10px;
+}
+.img-modal{
+	margin: 5px;
+	display: flex;
+	float: left;
+	width: 150px; 
+	height: 200px;
+}

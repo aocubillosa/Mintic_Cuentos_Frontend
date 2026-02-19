@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagenes/homepage/libropag.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="sweet/sweetalert2.css">
+    <script src="jquery/jquery-3.6.0.min.js"></script>
+    <title>Upload</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-dark">
+        <div class="container-fluid">
+            <img class="img-small" src="imagenes/homepage/libropag.png" alt=""/>&nbsp;&nbsp;&nbsp;
+            <div id="usuario"></div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#barra" aria-controls="barra" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="barra">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <button class="btn btn-sm btn-success" id="regresar" name="regresar"><span class='fa fa-undo-alt'></span> Regresar</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="img-background-upload">
+        <div class="container">
+            <h2 class="titulo">Cargar Cuento</h2><br>
+            <form class="form" id="formulario" name="formulario" method="post" enctype="multipart/form-data">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2">
+                        <div class="input-file">
+                            <input class="input-file-input" type="file" id="file" name="file">
+                            <label class="input-file-btn" for="file">Seleccionar Archivo</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="formulario col-md-4">
+                        <label class="input-file-field">Ningun archivo seleccionado</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4">
+                        <h4 class="formulario">Titulo<h4>
+                        <input class="form-control" type="text" id="titulo" name="titulo">
+                    </div>
+                    <div class="col-md-4">
+                        <h4 class="formulario">Género<h4>
+                        <select class="form-control" id="genero" name="genero">
+                            <option value="">Seleccione...</option>
+                            <option value="1">Cuentos de Hadas</option>
+                            <option value="2">Cuentos de Animales</option>
+                            <option value="3">Cuentos de Costumbres</option>
+                            <option value="4">Cuentos Fantásticos</option>
+                            <option value="5">Cuentos Realistas</option>
+                            <option value="6">Cuentos de Misterio</option>
+                            <option value="7">Cuentos de Suspenso</option>
+                            <option value="8">Cuentos de Terror</option>
+                            <option value="9">Cuentos de Comedia</option>
+                            <option value="10">Cuentos Históricos</option>
+                            <option value="11">Cuentos Románticos</option>
+                            <option value="12">Cuentos de Aventura</option>
+                            <option value="13">Cuentos Policiales</option>
+                            <option value="14">Cuentos de Ciencia Ficción</option>
+                            <option value="15">Cuentos de Navidad</option>
+                            <option value="16">Cuentos Infantiles</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <h4 class="formulario">Resumen<h4>
+                        <textarea class="form-control" id="resumen" name="resumen" rows="10"></textarea>
+                    </div>
+                </div><br>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <button type="submit" class="btn btn-primary" id="guardar" name="guardar"><span class='fa fa-save'></span> Guardar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="container-fluid py-1 bg-dark text-white">
+        <div class="redes-sociales">
+            <a rhef="#" class="btn-facebook" target="_blank">
+                <img class="img-small" src="imagenes/homepage/facebook.png" alt="">
+            </a>
+            <a rhef="#" class="btn-instagram" target="_blank">
+                <img class="img-small" src="imagenes/homepage/instagram.png" alt="">
+            </a>
+            <a rhef="#" class="btn-twitter" target="_blank">
+                <img class="img-small" src="imagenes/homepage/twitter.png" alt="">
+            </a>
+            <p> &copy; Team G-56</p>
+        </div>
+    </footer>
+    <script src="javascript/upload.js"></script>
+    <script src="sweet/sweetalert2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

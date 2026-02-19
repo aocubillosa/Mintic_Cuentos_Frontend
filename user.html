@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="shortcut icon" href="imagenes/homepage/libropag.png" type="image/x-icon">
+    <link rel="stylesheet" href = "css/user.css">
+    <script src="jquery/jquery-3.6.0.min.js"></script>
+    <script src="javaScript/user_view.js"></script>
+    <title>User</title>
+</head>
+<body>
+    <input type="checkbox" id="check_sidebar">
+    <header>
+        <nav>
+            <div class="logo_titulo_nav">
+                <label for="check_sidebar">
+                    <img src="Imagenes/homepage/libropag.png" alt="Logo">
+                    <p>Cuentos</p>
+                </label>
+            </div>
+            <div class="opciones_nav">
+                <ul>
+                    <li>
+                        <div id="usuario" class="usuario"></div>
+                    </li>
+                    <li>
+                        <a href=""><span class="fa fa-phone"></span>Contactar</a>
+                    </li>
+                    <li>
+                        <a id="login" name="login"><span class='fa fa-sign-out-alt'></span>Cerrar Sesion</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="modal-shadow">
+        <div class="modal">
+            <h2 id="modal-title">Title</h2>
+            <div class="mrs2">
+            <div id="modal-resumen-shadow">
+                <img id="modal-image" src="Imagenes/homepage/facebook.png">
+                <p id="modal-resumen"></p>
+            </div>
+            </div>
+            <div class="detalles">
+                <p id="modal-autor">autor</p>
+                <p id="modal-genero">genero</p>
+            </div>
+            <div class="modal-cerrar-shadow">
+                <button id="modal-cerrar">Cerrar</button>
+            </div>
+        </div>
+    </section>
+    <aside>
+        <div id="sidebar_title">
+            <p>Clasificaciones</p>
+        </div>
+        <ul class="opciones_sidebar" id="scrollbar_style">
+        </ul>
+        <div class="redes">
+            <button>
+                <img src="Imagenes/homepage/facebook.png">
+            </button>
+            <button>
+                <img src="Imagenes/homepage/instagram.png">
+            </button>
+            <button>
+                <img src="Imagenes/homepage/twitter.png">
+            </button>
+        </div>
+    </aside>
+    <article class="content">
+        <a href = "#" id="atras" class="controls_content">&#60</a>
+        <section class="box_content" id="alignContent">
+            <div class="shadow_items_content">
+            </div>
+        </section>
+        <a href = "#" id="adelante" class="controls_content">&#62</a>
+    </article>
+    <footer>
+        <ul>
+            <li>Proyecto C3</li>
+            <li>&copy; Team G-56</li>
+        </ul>
+    </footer>
+</body>
+</html>

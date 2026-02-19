@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagenes/homepage/libropag.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="css/registro.css">
+    <link rel="stylesheet" href="sweet/sweetalert2.css">
+    <script src="jquery/jquery-3.6.0.min.js"></script>
+    <title>Registro</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-dark">
+        <div class="container-fluid">
+            <img class="img-small" src="imagenes/homepage/libropag.png" alt=""/>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#barra" aria-controls="barra" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="barra">
+                <ul class="navbar-nav mx-auto"></ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <button class="btn btn-sm btn-primary" id="inicio" name="inicio"><span class='fa fa-home'></span> Inicio</button>
+                    </li>&nbsp;&nbsp;
+                    <li class="nav-item">
+                        <button class="btn btn-sm btn-primary" id="login" name="login"><span class='fa fa-sign-in-alt'></span> Iniciar Sesión</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="img-background">
+        <div class="container">
+            <h1 class="titulo">Registro</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="nombres"><h4>Nombres *</h4></label>
+                    <input class="form-control" type="text" id="nombres" name="nombres" placeholder="Nombres" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="apellidos"><h4>Apellidos *</h4></label>
+                    <input class="form-control" type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="correo"><h4>Correo *</h4></label>
+                    <input class="form-control" type="email" id="correo" name="correo" placeholder="Correo" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="usuario"><h4>Usuario *</h4></label>
+                    <input class="form-control" type="text" id="usuario" name="usuario" placeholder="Usuario" required>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="contrasena"><h4>Contraseña *</h4></label>
+                    <input class="form-control" type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="confirmar"><h4>Confirmar contraseña *</h4></label>
+                    <input class="form-control" type="password" id="confirmar" name="confirmar" placeholder="Confirmar contraseña" required>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="tipo"><h4>Tipo de Usuario *</h4></label>
+                    <select class="form-control" id="tipo" name="tipo">
+                        <option value="">Seleccione...</option>
+                        <option value="1">Lector</option>
+                        <option value="2">Autor</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="genero"><h4>Género Favorito *</h4></label>
+                    <select class="form-control" id="genero" name="genero">
+                        <option value="">Seleccione...</option>
+                        <option value="1">Cuentos de Hadas</option>
+                        <option value="2">Cuentos de Animales</option>
+                        <option value="3">Cuentos de Costumbres</option>
+                        <option value="4">Cuentos Fantásticos</option>
+                        <option value="5">Cuentos Realistas</option>
+                        <option value="6">Cuentos de Misterio</option>
+                        <option value="7">Cuentos de Suspenso</option>
+                        <option value="8">Cuentos de Terror</option>
+                        <option value="9">Cuentos de Comedia</option>
+                        <option value="10">Cuentos Históricos</option>
+                        <option value="11">Cuentos Románticos</option>
+                        <option value="12">Cuentos de Aventura</option>
+                        <option value="13">Cuentos Policiales</option>
+                        <option value="14">Cuentos de Ciencia Ficción</option>
+                        <option value="15">Cuentos de Navidad</option>
+                        <option value="16">Cuentos Infantiles</option>
+                    </select>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-12">
+                    <input type="checkbox" id="acepto" name="acepto" required/>
+                    <label for="acepto"><h4>Acepto terminos y condiciones *</h4></label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <label>* Campos Obligatorios.</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <button class="btn btn-primary" id="registrar" name="registrar"><span class='fa fa-address-book'></span> Registrar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="container-fluid py-1 bg-dark text-white">
+        <div class="redes-sociales">
+            <a rhef="#" class="btn-facebook" target="_blank">
+                <img class="img-small" src="imagenes/homepage/facebook.png" alt="">
+            </a>
+            <a rhef="#" class="btn-instagram" target="_blank">
+                <img class="img-small" src="imagenes/homepage/instagram.png" alt="">
+            </a>
+            <a rhef="#" class="btn-twitter" target="_blank">
+                <img class="img-small" src="imagenes/homepage/twitter.png" alt="">
+            </a>
+            <p> &copy; Team G-56</p>
+        </div>
+    </footer>
+    <script src="javascript/registro.js"></script>
+    <script src="sweet/sweetalert2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>   
+</body>
+</html>

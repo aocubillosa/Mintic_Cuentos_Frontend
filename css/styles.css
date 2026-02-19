@@ -1,0 +1,35 @@
+@font-face{
+	font-family: FuenteLato;
+	src: url(../fuentes/Lato-BlackItalic.ttf);
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+	padding: 10px;
+	text-align: center;
+}
+h1.titulo{
+	font-family: FuenteLato;
+	text-align: center;
+	color: blue;
+}
+h4{
+	font-family: FuenteLato;
+	text-align: center;
+	color: maroon;
+}
+.img-small{
+	width: 30px; height: 30px;
+}
+.img-background {
+	background-image: url('../imagenes/portadas/fondo1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 20px;
+}
+.contenedor{
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
